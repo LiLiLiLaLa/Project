@@ -1,0 +1,35 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://127.0.0.1/blog_only?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+  jackson:
+    default-property-inclusion: non_null
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: 127.0.0.1:9300
+  thymeleaf:
+    cache: false
+  servlet:
+    multipart:
+      max-file-size: 10485760
+      max-request-size: 104857600
+
+server:
+  servlet:
+    context-path: /
+  port: 80
+
+#fileupload:
+#  blogUrl: http://localhost:8080
+#  imgPath: /Users/zouchanglin/Desktop/blog_img/
+#
+fileupload:
+  blogUrl: http://129.28.21.173:80
+  imgPath: /root/FileServerWD/
