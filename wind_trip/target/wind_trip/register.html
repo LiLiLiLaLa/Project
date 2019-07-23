@@ -19,40 +19,145 @@
 			6.出生日期：非空
 			7.验证码：非空
 			 */
+			window.onload=function () {
+
+			}
 
 			//校验用户名
 			//单词字符，6到20位长度
 			function checkUsername() {
+				var flag = true;
 				//获取用户名的值
 				var username = $("#username").val();
 				//定义正则
 				var reg_username = /^\w{6,20}$/;
 				//判断、给出提示信息
-				var flag = reg_username.test(username);
+				flag = reg_username.test(username);
+
 				if(flag){
 					//用户名合法
-
+					$("#username").css("border","")
 				}else{
-					//用户名非法
-					$("#username").css("border","1px solid red");
+					//用户名非法,，加橙色的边框
+					$("#username").css("border","1px solid orange");
 				}
 				return flag;
             }
 
             //校验密码
             function checkPassword() {
-                alert("校验密码");
-                return true;
+                var flag = true;
+                //获取用户名的值
+                var password = $("#password").val();
+                //定义正则
+                var reg_password = /^\w{6,20}$/;
+                //判断、给出提示信息
+                flag = reg_password.test(password);
+
+                if(flag){
+                    //用户名合法
+                    $("#password").css("border","")
+                }else{
+                    //用户名非法,，加橙色的边框
+                    $("#password").css("border","1px solid orange");
+                }
+                return flag;
             }
 
-            $(function () {
+			//校验邮箱
+			function checkEmail(){
+				//获取邮箱
+				var email = $("#email").val();
+				//定义正则
+				var reg_email = /^\w+@\w+\.\w+$/;
+				//判断
+				var flag = reg_email.test(email);
+				if(flag){
+					//成功
+					$("#email").css("border","")
+				}else {
+					//失败
+					$("#email").css("border","1px solid orange");
+				}
+				return flag;
+			}
+
+			//校验手机号
+			function checkTelephone(){
+				var teltephone = $("#telephone").val();
+				//正则:手机号：11个数字（第一个数字不能0）
+				var reg_telephone = /^1[345678]\d{9}$/ ;//[abc]   [0-9](d代表纯数字)
+
+				//校验
+				var flag = reg_telephone.test(teltephone) ;
+
+				if(flag){
+					$("#telephone").css("border","") ;
+				}else{
+					$("#telephone").css("border","1px solid orange");
+				}
+				return flag ;
+			}
+
+			//校验姓名
+			function checkName() {
+				var name = $("#name").val();
+				if (name == "") {
+					$("#name").css("border", "1px solid orange");
+					return false;
+				} else {
+					$("#name").css("border", "");
+					return true;
+				}
+			}
+
+			//校验出生日期
+			function checkBirthday() {
+				var birthday = $("#birthday").val();
+				if (birthday == "") {
+					$("#birthday").css("border", "1px solid orange");
+					return false;
+				} else {
+					$("#birthday").css("border", "");
+					return true;
+				}
+			}
+
+			// 校验验证码
+			function checkCheck() {
+				var check = $("#check").val();
+				if (!check) {
+					$("#check").css("border", "1px solid orange");
+					return false;
+				} else {
+					$("#check").css("border", "");
+					return true;
+				}
+			}
+
+			$(function () {
                 //当表单提交时调用所有校验方法
 				$("#registerForm").submit(function(){
-				    return checkUsername() && checkPassword();
+					//发送数据到服务器
+					if(checkUsername() && checkPassword() && checkEmail() && checkTelephone() && checkBirthday() && checkCheck() && checkName()){
+						//校验通过，发送Ajax请求提交表单数据
+						//serialize()方法，序列化成username=hbciwuecbxhu&password=12334565
+						$.post("regist_user_servlet",$(this).serialize(),function (data){
+							//处理服务器响应的数据 data.
+						});
+					}
+					//跳转页面
+				    return false;
 				    //如果这个方法没有返回值，或者返回为true，则表单提交，如果返回为false，则表单不提交
 				});
                 //当某一组件失去焦点时调用对应校验方法
-				$("#username").blur(checkUsername());
+				$("#username").blur(checkUsername);
+				$("#password").blur(checkPassword);
+				$("#email").blur(checkEmail);
+				$("#telephone").blur(checkTelephone);
+				$("#name").blur(checkName);
+				$("#birthday").blur(checkBirthday);
+				$("#check").blur(checkCheck);
             })
 		</script>
 </head>
@@ -69,7 +174,7 @@
     			<div class="rg_form_center">
 					
 					<!--注册表单-->
-    				<form id="registerForm" action="user">
+    				<form id="registerForm" action="regist_user_servlet">
 						<!--提交处理请求的标识符-->
 						<input type="hidden" name="action" value="register">
     					<table style="margin-top: 25px;">

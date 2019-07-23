@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2983">
-              <caret line="157" column="43" selection-start-line="157" selection-start-column="43" selection-end-line="157" selection-end-column="43" />
+            <state relative-caret-position="-2413">
+              <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -31,9 +31,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="1158" />
-    <option name="width" value="769" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="952" />
+    <option name="width" value="977" />
     <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
@@ -84,16 +84,15 @@
       <option name="presentableId" value="Default" />
       <updated>1563632252757</updated>
       <workItem from="1563632254848" duration="3888000" />
-      <workItem from="1563677430250" duration="4894000" />
+      <workItem from="1563677430250" duration="5817000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8782000" />
+    <option name="totallyTimeSpent" value="9705000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="927" y="0" width="615" height="830" extended-state="1" />
-    <editor active="true" />
+    <frame x="762" y="0" width="781" height="830" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.45771813" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -120,8 +119,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2983">
-          <caret line="157" column="43" selection-start-line="157" selection-start-column="43" selection-end-line="157" selection-end-column="43" />
+        <state relative-caret-position="-2413">
+          <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
         </state>
       </provider>
     </entry>

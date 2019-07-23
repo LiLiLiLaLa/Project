@@ -1,6 +1,7 @@
 package xpu.edu.wind_trip.dao.impl;
 
 import com.alibaba.druid.util.JdbcUtils;
+import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import xpu.edu.wind_trip.dao.UserDao;
@@ -11,10 +12,15 @@ public class UserDaoImpl implements UserDao {
     private JdbcTemplate template = new JdbcTemplate(JDBCUtils.getDataSource());
     @Override
     public User findByUsername(String username) {
-        //定义sql语句
-        String sql = "select * from tab_user where username=?";
-        //执行sql
-        User user = template.queryForObject(sql, new BeanPropertyRowMapper<User>(User.class), username);
+        User user = null;
+        try{
+            //定义sql语句
+            String sql = "select * from tab_user where username=?";
+            //执行sql
+            user = template.queryForObject(sql, new BeanPropertyRowMapper<User>(User.class), username);
+        }catch (DataAccessException e){
+            e.printStackTrace();
+        }
         return user;
     }
 
