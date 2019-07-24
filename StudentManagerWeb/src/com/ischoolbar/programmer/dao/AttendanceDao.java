@@ -12,8 +12,6 @@ import com.ischoolbar.programmer.util.StringUtil;
 
 /**
  * 考勤信息数据库操作
- * @author llq
- *
  */
 public class AttendanceDao extends BaseDao {
 	/**

@@ -12,7 +12,6 @@ import com.ischoolbar.programmer.util.StringUtil;
 
 /**
  * 请假表数据库操作
- * @author llq
  *
  */
 public class LeaveDao extends BaseDao {

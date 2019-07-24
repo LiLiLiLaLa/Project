@@ -19,8 +19,6 @@ import com.ischoolbar.programmer.model.Clazz;
 import com.ischoolbar.programmer.model.Page;
 /**
  * 
- * @author llq
- *班级信息管理servlet
  */
 public class ClazzServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request,HttpServletResponse response) throws IOException{

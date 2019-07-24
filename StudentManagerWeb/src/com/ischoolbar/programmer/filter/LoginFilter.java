@@ -11,8 +11,6 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 /**
- * 
- * @author llq
  *拦截用户未登录状态下的操作
  */
 public class LoginFilter implements Filter {

@@ -7,8 +7,6 @@ import java.sql.SQLException;
 
 import javax.management.loading.PrivateClassLoader;
 /**
- * 
- * @author llq
  *数据库连util
  */
 public class DbUtil {

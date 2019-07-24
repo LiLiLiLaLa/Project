@@ -13,8 +13,6 @@ import com.ischoolbar.programmer.model.SelectedCourse;
 
 /**
  * 成绩表数据库基础操作
- * @author llq
- *
  */
 public class ScoreDao extends BaseDao {
 	/**

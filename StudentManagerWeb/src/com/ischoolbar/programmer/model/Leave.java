@@ -1,8 +1,6 @@
 package com.ischoolbar.programmer.model;
 /**
  * 请假表实体类
- * @author llq
- *
  */
 public class Leave {
 	

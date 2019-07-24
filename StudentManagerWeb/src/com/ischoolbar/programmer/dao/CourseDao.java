@@ -11,9 +11,7 @@ import com.ischoolbar.programmer.model.Page;
 import com.ischoolbar.programmer.util.StringUtil;
 
 /**
- * 
- * @author llq
- *课程数据库操作类
+   * 课程数据库操作类
  */
 public class CourseDao extends BaseDao {
 	public boolean addCourse(Course course){
@@ -116,7 +114,7 @@ public class CourseDao extends BaseDao {
 	}
 	
 	/**
-	 * 获取制定id范围内的课程列表
+	   * 获取制定id范围内的课程列表
 	 * @param ids
 	 * @return
 	 */

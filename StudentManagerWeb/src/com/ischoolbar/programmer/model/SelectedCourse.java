@@ -1,7 +1,5 @@
 package com.ischoolbar.programmer.model;
 /**
- * 
- * @author llq
  *选课表实体
  */
 public class SelectedCourse {

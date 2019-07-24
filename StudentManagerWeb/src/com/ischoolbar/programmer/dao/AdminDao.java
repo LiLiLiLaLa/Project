@@ -7,9 +7,7 @@ import com.ischoolbar.programmer.model.Admin;
 import com.ischoolbar.programmer.model.Clazz;
 
 /**
- * 
- * @author llq
- *管理员数据库操作封装
+   * 管理员数据库操作封装
  */
 public class AdminDao extends BaseDao {
 	

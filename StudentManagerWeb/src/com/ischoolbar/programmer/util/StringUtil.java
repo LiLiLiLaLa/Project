@@ -1,7 +1,5 @@
 package com.ischoolbar.programmer.util;
 /**
- * 
- * @author llq
  *String类的一些公用操作方法
  */
 public class StringUtil {

@@ -10,8 +10,6 @@ import java.util.List;
 import com.ischoolbar.programmer.util.DbUtil;
 
 /**
- * 
- * @author llq
  *基础dao，封装基本操作
  */
 public class BaseDao {

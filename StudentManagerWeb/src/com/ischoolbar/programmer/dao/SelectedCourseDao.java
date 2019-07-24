@@ -10,8 +10,6 @@ import com.ischoolbar.programmer.model.Page;
 import com.ischoolbar.programmer.model.SelectedCourse;
 
 /**
- * 
- * @author llq
  *选课表数据库操作封装
  */
 public class SelectedCourseDao extends BaseDao {

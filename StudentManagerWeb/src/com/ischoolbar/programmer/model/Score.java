@@ -1,8 +1,6 @@
 package com.ischoolbar.programmer.model;
 /**
  * 成绩实体表
- * @author llq
- *
  */
 public class Score {
 	private int id;

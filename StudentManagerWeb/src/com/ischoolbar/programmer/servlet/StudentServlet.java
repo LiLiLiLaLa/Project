@@ -20,8 +20,6 @@ import com.ischoolbar.programmer.model.Page;
 import com.ischoolbar.programmer.model.Student;
 import com.ischoolbar.programmer.util.SnGenerateUtil;
 /**
- * 
- * @author llq
  *学生信息管理功能实现servlet
  */
 public class StudentServlet extends HttpServlet {

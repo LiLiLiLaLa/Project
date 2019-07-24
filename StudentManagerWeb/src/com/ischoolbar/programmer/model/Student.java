@@ -3,8 +3,6 @@ package com.ischoolbar.programmer.model;
 import java.io.InputStream;
 
 /**
- * 
- * @author llq
  *学生实体类
  */
 public class Student {

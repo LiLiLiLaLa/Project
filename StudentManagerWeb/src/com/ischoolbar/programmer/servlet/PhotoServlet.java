@@ -22,8 +22,6 @@ import com.lizhou.exception.SizeException;
 import com.lizhou.fileload.FileUpload;
 
 /**
- * 
- * @author llq
  *图片处理类servlet
  */
 public class PhotoServlet extends HttpServlet {

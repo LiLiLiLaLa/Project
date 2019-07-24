@@ -14,8 +14,6 @@ import com.ischoolbar.programmer.model.Admin;
 import com.ischoolbar.programmer.model.Student;
 import com.ischoolbar.programmer.model.Teacher;
 /**
- * 
- * @author llq
  *系统登录后主界面
  */
 public class SystemServlet extends HttpServlet {

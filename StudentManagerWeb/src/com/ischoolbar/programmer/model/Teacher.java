@@ -3,8 +3,6 @@ package com.ischoolbar.programmer.model;
 import java.io.InputStream;
 
 /**
- * 
- * @author llq
  *教师实体表设计
  */
 public class Teacher {

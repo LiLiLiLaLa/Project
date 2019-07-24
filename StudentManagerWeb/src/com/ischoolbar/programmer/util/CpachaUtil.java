@@ -9,8 +9,6 @@ import java.util.Random;
 
 /**
  * 验证码生成器
- * 
- * @author llq
  */
 public class CpachaUtil {
 	

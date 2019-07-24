@@ -1,8 +1,6 @@
 package com.ischoolbar.programmer.model;
 /**
  * 考勤表
- * @author llq
- *
  */
 public class Attendance {
 	private int id;

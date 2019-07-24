@@ -13,8 +13,6 @@ import com.ischoolbar.programmer.model.Teacher;
 import com.ischoolbar.programmer.util.StringUtil;
 
 /**
- * 
- * @author llq
  *教师表数据库操作
  */
 public class TeacherDao extends BaseDao {

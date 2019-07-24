@@ -10,8 +10,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.ischoolbar.programmer.util.CpachaUtil;
 /**
- * 
- * @author llq
  *验证码servlet
  */
 public class CpachaServlet extends HttpServlet {

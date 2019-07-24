@@ -1,8 +1,6 @@
 package com.ischoolbar.programmer.model;
 /**
  * 
- * @author llq
- *课程实体表
  */
 public class Course {
 	private int id;
