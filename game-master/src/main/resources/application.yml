@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    password: 1Baiduyun$
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1/game?characterEncoding=utf-8&useSSL=false&serverTimezone=GMT
+  jpa:
+    show-sql: true
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+server:
+  servlet:
+    context-path: /
+
+  tomcat:
+    uri-encoding: UTF-8
+
+tim:
+  webmvc:
+    corss-mapping: /**
