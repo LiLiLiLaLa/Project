@@ -10,6 +10,7 @@ import edu.xpu.game.enums.ResultEnum;
  */
 public class SellException extends RuntimeException{
     private Integer code;
+    String
 
     public SellException(ResultEnum resultEnum) {
         super(resultEnum.getMessage());

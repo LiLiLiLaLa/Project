@@ -1,0 +1,28 @@
+{
+  "groups": [
+    {
+      "name": "tim.webmvc",
+      "type": "edu.xpu.game.config.DefinedWebMvcConfigurer",
+      "sourceType": "edu.xpu.game.config.DefinedWebMvcConfigurer"
+    }
+  ],
+  "properties": [
+    {
+      "name": "tim.webmvc.corss-mapping",
+      "type": "java.lang.String",
+      "description": "跨域匹配地址",
+      "sourceType": "edu.xpu.game.config.DefinedWebMvcConfigurer",
+      "defaultValue": "\/**"
+    },
+    {
+      "name": "tim.webmvc.corss-origins",
+      "type": "java.lang.String[]",
+      "description": "跨域允许地址",
+      "sourceType": "edu.xpu.game.config.DefinedWebMvcConfigurer",
+      "defaultValue": [
+        "*"
+      ]
+    }
+  ],
+  "hints": []
+}
